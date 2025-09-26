@@ -1,54 +1,56 @@
-Build a REST API in Python
+# Build a REST API in Python
 
 This project demonstrates how to build a fully functional REST API in Python using Flask and SQLAlchemy. It covers everything from the basics of APIs to integrating a database and testing endpoints with Postman.
 
-What is an API?
+<img width="2848" height="1648" alt="image" src="https://github.com/user-attachments/assets/ef7cf3cf-84c6-47f8-baa5-490d8170b7ed" /> <br>
+
+## What is an API?
 
 An API (Application Programming Interface) allows communication between a client (front-end) and a server (back-end).
-This project implements a REST API (Representational State Transfer), which organizes resources into unique URIs and supports standard CRUD operations:
+This project implements a REST API (Representational State Transfer), which organizes resources into unique URIs and supports standard `CRUD operations`:
 
-POST → Create data
+- POST → Create data
 
-GET → Read data
+- GET → Read data
 
-PUT → Update data
+- PUT → Update data
 
-DELETE → Delete data
+- DELETE → Delete data
 
 All interactions are handled with JSON payloads for cross-language compatibility.
 
-⚙️ Tech Stack
+## Tech Stack
 
-Python 3
+- Python 3
 
-Flask → Lightweight framework for API routes
+- Flask → Lightweight framework for API routes
 
-Flask-SQLAlchemy → ORM to manage database models
+- Flask-SQLAlchemy → ORM to manage database models
 
-SQLite → Database backend
+- SQLite → Database backend
 
-Postman → API testing
+- Postman → API testing
 
-🛠️ Setup Instructions
+## Setup Instructions
 
-Clone the repo
+ ## Clone the repo
 
 git clone https://github.com/your-username/build-rest-api-python.git
 cd build-rest-api-python
 
 
-Create a virtual environment
+## Create a virtual environment
 
 python3 -m venv api_env
 source api_env/bin/activate
 
 
-Install dependencies
+## Install dependencies
 
 pip install -r requirements.txt
 
 
-Run the app
+## Run the app
 
 python app.py
 
@@ -57,14 +59,9 @@ Your API will be live at:
 
 http://127.0.0.1:5000
 
-📂 Project Structure
-├── app.py              # Main Flask application
-├── requirements.txt    # Dependencies
-├── instance/
-│   └── travel.db       # SQLite database (auto-generated)
-└── README.md           # Documentation
+<img width="445" height="144" alt="image" src="https://github.com/user-attachments/assets/d7b23109-63c3-49f7-8279-c020adcee070" />
 
-🧩 Database Model
+## Database Model
 
 The project uses a simple Destinations table:
 
@@ -73,7 +70,8 @@ id	Integer	Primary key
 destination	String	City or location name
 country	String	Associated country
 rating	Float	Rating score (1.0 - 5.0)
-🔑 API Endpoints
+
+## API Endpoints
 Method	Endpoint	Description
 GET	/	Welcome message
 GET	/destinations	Fetch all destinations
@@ -81,14 +79,15 @@ GET	/destinations/<id>	Fetch destination by ID
 POST	/destinations	Add a new destination
 PUT	/destinations/<id>	Update destination by ID
 DELETE	/destinations/<id>	Delete destination by ID
-🧪 Testing with Postman
+
+## Testing with Postman
 
 Open Postman and enter the API base URL:
 
 http://127.0.0.1:5000
 
 
-Test requests:
+##Test requests:
 
 GET /destinations → Returns all data in JSON.
 
@@ -104,3 +103,9 @@ POST /destinations with body:
 PUT /destinations/1 → Update entry with ID 1.
 
 DELETE /destinations/1 → Remove entry with ID 1.
+
+---
+
+### Learnt from ~ Code with Josh @ YT
+
+---
