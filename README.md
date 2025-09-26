@@ -35,14 +35,14 @@ All interactions are handled with JSON payloads for cross-language compatibility
 
  ## Clone the repo
 
-git clone https://github.com/your-username/build-rest-api-python.git
-cd build-rest-api-python
+- git clone https://github.com/your-username/build-rest-api-python.git
+- cd build-rest-api-python
 
 
 ## Create a virtual environment
 
-python3 -m venv api_env
-source api_env/bin/activate
+- python3 -m venv api_env
+- source api_env/bin/activate
 
 
 ## Install dependencies
@@ -65,20 +65,20 @@ http://127.0.0.1:5000
 
 The project uses a simple Destinations table:
 
-Field	Type	Description
-id	Integer	Primary key
-destination	String	City or location name
-country	String	Associated country
-rating	Float	Rating score (1.0 - 5.0)
+- Field	Type	Description
+- id	Integer	Primary key
+- destination	String	City or location name
+- country	String	Associated country
+- rating	Float	Rating score (1.0 - 5.0)
 
 ## API Endpoints
 Method	Endpoint	Description
-GET	/	Welcome message
-GET	/destinations	Fetch all destinations
-GET	/destinations/<id>	Fetch destination by ID
-POST	/destinations	Add a new destination
-PUT	/destinations/<id>	Update destination by ID
-DELETE	/destinations/<id>	Delete destination by ID
+- GET	/	Welcome message
+- GET	/destinations	Fetch all destinations
+- GET	/destinations/<id>	Fetch destination by ID
+- POST	/destinations	Add a new destination
+- PUT	/destinations/<id>	Update destination by ID
+- DELETE	/destinations/<id>	Delete destination by ID
 
 ## Testing with Postman
 
@@ -89,23 +89,23 @@ http://127.0.0.1:5000
 
 ##Test requests:
 
-GET /destinations → Returns all data in JSON.
+- GET /destinations → Returns all data in JSON.
 
-POST /destinations with body:
+- POST /destinations with body:
 
-{
-  "destination": "Paris",
-  "country": "France",
-  "rating": 4.8
-}
+    `{
+      "destination": "Paris",
+      "country": "France",
+      "rating": 4.8
+    }`
 
 
-PUT /destinations/1 → Update entry with ID 1.
+- PUT /destinations/1 → Update entry with ID 1.
 
-DELETE /destinations/1 → Remove entry with ID 1.
+- DELETE /destinations/1 → Remove entry with ID 1.
 
 ---
 
-### Learnt from ~ Code with Josh @ YT
+`### Learnt from ~ Code with Josh @ YT`
 
 ---
